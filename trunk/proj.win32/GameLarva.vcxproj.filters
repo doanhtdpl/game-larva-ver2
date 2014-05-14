@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{faeb2c92-1777-4c65-b048-f0696850dc42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GameObj">
+      <UniqueIdentifier>{06418d2d-4cd4-4ec3-8eb4-0c8ce9bb2b7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GameScene">
+      <UniqueIdentifier>{f2758043-1c4f-4e12-bbb8-cc85e0f74bd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GameObj\Bug">
+      <UniqueIdentifier>{42059dc3-6346-4d93-b9e3-bc70c5cc8ca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Config">
+      <UniqueIdentifier>{6b05c848-32a1-461b-89f8-f5bce21512af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GameScene\Layer">
+      <UniqueIdentifier>{cec76acd-a285-43f3-92c1-0128a26ef597}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GameScene\Layer\GameObjectLayer">
+      <UniqueIdentifier>{37d79dba-41bf-4872-b841-c2f7fe89ba9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GameScene\Layer\BackgroundLayer">
+      <UniqueIdentifier>{2990ed2f-f131-4cea-a136-20d83dcc502e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GameScene\Layer\InputLayer">
+      <UniqueIdentifier>{bab55f79-b92d-495f-86b4-4a66d6232e48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item">
+      <UniqueIdentifier>{59f09fc6-ba21-41af-bb34-228adc250d18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item\ItemContainer">
+      <UniqueIdentifier>{40af80e2-f9ed-4411-9542-b234f6779d4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item\Item">
+      <UniqueIdentifier>{24d76794-038c-4f79-9970-bef2f3bdb1b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item\ItemContainer\ItemContainerState">
+      <UniqueIdentifier>{b1ca8daf-7e03-40d4-8ad6-1dfd8d191437}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item\ItemContainer\ItemContainer">
+      <UniqueIdentifier>{60291abd-a822-48c2-a611-d606fc1d0b0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item\ItemContainer\ChangeItemFactory">
+      <UniqueIdentifier>{d206fe4e-36fa-429f-8dff-f30f824fedad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item\ItemContainer\ChangeItemFactory\ChangeBodyNetItemFactory">
+      <UniqueIdentifier>{7f8041f7-79cc-4433-b1ad-90ba060c20a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item\ItemContainer\ChangeItemFactory\ChangeBodyTrident">
+      <UniqueIdentifier>{15d614be-bda8-488a-87aa-e56200463085}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item\ItemContainer\ChangeItemFactory\ChangeBodyHourglassItemFactory">
+      <UniqueIdentifier>{b34c33f8-bcc7-4f15-9eb1-d64b9e2480d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item\ItemContainer\ChangeItemFactory\ChangeBodyMineItemGlassFactory">
+      <UniqueIdentifier>{a33e2e9b-9db3-49ce-afc6-a470fb30f464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item\ItemContainer\ChangeItemFactory\ChangeBodyIncreaseTapFactory">
+      <UniqueIdentifier>{60747c78-a239-46f1-a3e0-a8d61c9b92b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item\ItemContainer\ItemContainer\NetItemContainer">
+      <UniqueIdentifier>{97ed29ad-e3b2-41c1-8c1e-3070cbbfe655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item\ItemContainer\ItemContainer\TridentItemContainer">
+      <UniqueIdentifier>{3d99ad3b-ef55-4260-8a8b-dddbdb061186}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item\ItemContainer\ItemContainer\HourglassItemContainer">
+      <UniqueIdentifier>{4945b54b-0a6a-4eca-92de-c74207ef2a1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item\ItemContainer\ItemContainer\MineItemContainer">
+      <UniqueIdentifier>{be7bf443-b226-4401-970e-ed13b729c3ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item\ItemContainer\ItemContainer\IncreaseTapItemContainer">
+      <UniqueIdentifier>{617f91f9-98b2-40b2-a36a-b6b5ea2714c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item\ItemContainer\ItemContainerState\LockState">
+      <UniqueIdentifier>{b8570932-dd2e-4862-82ae-7e33c9fcf5b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item\ItemContainer\ItemContainerState\UnlockState">
+      <UniqueIdentifier>{092deda2-88aa-4c03-83d2-e0523a3f31e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item\ItemContainer\ItemContainerState\ReadyState">
+      <UniqueIdentifier>{c80a8e06-938c-4970-a1e9-9d5a6d12d262}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item\ItemContainer\ItemContainerState\MovementState">
+      <UniqueIdentifier>{a1844fad-11fc-4d91-ab39-fc5d95a378af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Item\ItemContainer\ItemContainerState\UsedState">
+      <UniqueIdentifier>{913ca89f-062e-4878-bc93-9de0053a863c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GameScene\Layer\ItemLayer">
+      <UniqueIdentifier>{2392132c-8769-4130-9679-7ba1b7421e05}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameScene.cpp">
+      <Filter>Classes\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bug.cpp">
+      <Filter>Classes\GameObj\Bug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BugFactory.cpp">
+      <Filter>Classes\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FileUtil.cpp">
+      <Filter>Classes\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameObj.cpp">
+      <Filter>Classes\GameObj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Rock.cpp">
+      <Filter>Classes\GameObj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Item.cpp">
+      <Filter>Classes\Item\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameObjLayer.cpp">
+      <Filter>Classes\GameScene\Layer\GameObjectLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BackgroundLayer.cpp">
+      <Filter>Classes\GameScene\Layer\BackgroundLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\InputLayer.cpp">
+      <Filter>Classes\GameScene\Layer\InputLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BackGround.cpp">
+      <Filter>Classes\GameScene\Layer\BackgroundLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ItemContainer.cpp">
+      <Filter>Classes\Item\ItemContainer\ItemContainer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ChangeBodyNetItemFactory.cpp">
+      <Filter>Classes\Item\ItemContainer\ChangeItemFactory\ChangeBodyNetItemFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ChangeBodyTridentItemFactory.cpp">
+      <Filter>Classes\Item\ItemContainer\ChangeItemFactory\ChangeBodyTrident</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ChangeBodyHourglassItemFactory.cpp">
+      <Filter>Classes\Item\ItemContainer\ChangeItemFactory\ChangeBodyHourglassItemFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ChangeBodyMineItemFactory.cpp">
+      <Filter>Classes\Item\ItemContainer\ChangeItemFactory\ChangeBodyMineItemGlassFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ChangeBodyIncreaseTapFactory.cpp">
+      <Filter>Classes\Item\ItemContainer\ChangeItemFactory\ChangeBodyIncreaseTapFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NetItemContainer.cpp">
+      <Filter>Classes\Item\ItemContainer\ItemContainer\NetItemContainer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HourglassItemContainer.cpp">
+      <Filter>Classes\Item\ItemContainer\ItemContainer\HourglassItemContainer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MineItemContainer.cpp">
+      <Filter>Classes\Item\ItemContainer\ItemContainer\MineItemContainer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IncreaseTapItemContainer.cpp">
+      <Filter>Classes\Item\ItemContainer\ItemContainer\IncreaseTapItemContainer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TridentItemContainer.cpp">
+      <Filter>Classes\Item\ItemContainer\ItemContainer\TridentItemContainer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LockState.cpp">
+      <Filter>Classes\Item\ItemContainer\ItemContainerState\LockState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UnlockState.cpp">
+      <Filter>Classes\Item\ItemContainer\ItemContainerState\UnlockState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ReadyState.cpp">
+      <Filter>Classes\Item\ItemContainer\ItemContainerState\ReadyState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MovementState.cpp">
+      <Filter>Classes\Item\ItemContainer\ItemContainerState\MovementState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UsedState.cpp">
+      <Filter>Classes\Item\ItemContainer\ItemContainerState\UsedState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ItemLayer.cpp">
+      <Filter>Classes\GameScene\Layer\ItemLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Image.cpp">
+      <Filter>Classes\GameObj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\RockFactory.cpp">
+      <Filter>Classes\Config</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameScene.h">
+      <Filter>Classes\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bug.h">
+      <Filter>Classes\GameObj\Bug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BugFactory.h">
+      <Filter>Classes\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FileUtil.h">
+      <Filter>Classes\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameObj.h">
+      <Filter>Classes\GameObj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ObjFactory.h">
+      <Filter>Classes\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Rock.h">
+      <Filter>Classes\GameObj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Item.h">
+      <Filter>Classes\Item\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameObjLayer.h">
+      <Filter>Classes\GameScene\Layer\GameObjectLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BackgroundLayer.h">
+      <Filter>Classes\GameScene\Layer\BackgroundLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\InputLayer.h">
+      <Filter>Classes\GameScene\Layer\InputLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BackGround.h">
+      <Filter>Classes\GameScene\Layer\BackgroundLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ItemContainerState.h">
+      <Filter>Classes\Item\ItemContainer\ItemContainerState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ItemContainerInterface.h">
+      <Filter>Classes\Item\ItemContainer\ItemContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ItemContainer.h">
+      <Filter>Classes\Item\ItemContainer\ItemContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ChangeBodyItemFactory.h">
+      <Filter>Classes\Item\ItemContainer\ChangeItemFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ChangeBodyNetItemFactory.h">
+      <Filter>Classes\Item\ItemContainer\ChangeItemFactory\ChangeBodyNetItemFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Utils.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ChangeBodyTridentItemFactory.h">
+      <Filter>Classes\Item\ItemContainer\ChangeItemFactory\ChangeBodyTrident</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ChangeBodyMineItemFactory.h">
+      <Filter>Classes\Item\ItemContainer\ChangeItemFactory\ChangeBodyMineItemGlassFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ChangeBodyIncreaseTapFactory.h">
+      <Filter>Classes\Item\ItemContainer\ChangeItemFactory\ChangeBodyIncreaseTapFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NetItemContainer.h">
+      <Filter>Classes\Item\ItemContainer\ItemContainer\NetItemContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HourglassItemContainer.h">
+      <Filter>Classes\Item\ItemContainer\ItemContainer\HourglassItemContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MineItemContainer.h">
+      <Filter>Classes\Item\ItemContainer\ItemContainer\MineItemContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IncreaseTapItemContainer.h">
+      <Filter>Classes\Item\ItemContainer\ItemContainer\IncreaseTapItemContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TridentItemContainer.h">
+      <Filter>Classes\Item\ItemContainer\ItemContainer\TridentItemContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LockState.h">
+      <Filter>Classes\Item\ItemContainer\ItemContainerState\LockState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UnlockState.h">
+      <Filter>Classes\Item\ItemContainer\ItemContainerState\UnlockState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ReadyState.h">
+      <Filter>Classes\Item\ItemContainer\ItemContainerState\ReadyState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MovementState.h">
+      <Filter>Classes\Item\ItemContainer\ItemContainerState\MovementState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UsedState.h">
+      <Filter>Classes\Item\ItemContainer\ItemContainerState\UsedState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ChangeBodyHourglassItemFactory.h">
+      <Filter>Classes\Item\ItemContainer\ChangeItemFactory\ChangeBodyHourglassItemFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ItemLayer.h">
+      <Filter>Classes\GameScene\Layer\ItemLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Image.h">
+      <Filter>Classes\GameObj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\RockFactory.h">
+      <Filter>Classes\Config</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
