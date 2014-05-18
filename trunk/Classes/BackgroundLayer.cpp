@@ -14,7 +14,7 @@ bool BackgroundLayer::init()
 	srand( time(0) );
 	this->objs = new cocos2d::CCArray( 0 );
 	n = rand() % 50 + 50;
-	n = 3;//
+	n = 5;//
 	arrRock = new Rock*[n];
 	for (int i = 0; i < n; i++)
 	{
@@ -29,9 +29,22 @@ bool BackgroundLayer::init()
 		objs->addObject( arrRock[i] );
 	}
 
+	pLabel = CCLabelTTF::create("Tuan Hoang", "Arial", visibleSize.height / 20);
+	pLabel->setPosition( CCPoint(visibleSize.width / 3, visibleSize.height / 4) );
+	this->addChild(pLabel);
+
+	//lable rock
+	pLabelRock = CCLabelTTF::create("", "Arial", visibleSize.height / 20);
+	pLabelRock->setPosition( CCPoint(visibleSize.width / 3, visibleSize.height / 5) );
+	this->addChild(pLabelRock);
+
+	FAcc_x = 0;
+	FAcc_y = 0;
+	//FAcc = CCPoint(0, 0);
+
 	flagAcc = false;
 	timeDuringAccUpdate = 0;
-	d = 0;
+//	d = 0;
 	this->scheduleUpdate();
 	return true;
 }
@@ -42,46 +55,36 @@ void BackgroundLayer::didAccelerate(CCAcceleration* pAccelerationValue)
 	{
 		if (flagAcc)
 		{
-			//posOldAcc = posCurAcc;
-			//posCurAcc = pDir->convertToGL(ptTemp);
-			//posCurAcc = ptTemp1;
 			speedAcc = ( ( pAccelerationValue->x + pAccelerationValue->y + pAccelerationValue->z) 
 								- (last_x + last_y + last_z) ) / timeDuringAccUpdate * 1000;
-			/*if (speedAcc < 0.0f)
-				speedAcc *= -1.0f*/;
 
 			//bugs
-			if (speedAcc < -200|| speedAcc > 200)//is shaking  
+			if (speedAcc < -300 || speedAcc > 300)//is shaking  
 			{
-				isShaking = true;
-				d += sqrt( pow( (pAccelerationValue->x - last_x), 2) + pow( (pAccelerationValue->y - last_y) ,2 ) + pow( (pAccelerationValue->z - last_z), 2) );
-
 				//update vector Acc Delta
-				vectorAccDelta.x = ( pAccelerationValue->x - last_x ) * 9.81f;
-				vectorAccDelta.y = ( pAccelerationValue->y - last_y ) * 9.81f;
+				vectorAccDelta_x = ( pAccelerationValue->x - last_x ) * 9.81f;
+				vectorAccDelta_y = ( pAccelerationValue->y - last_y ) * 9.81f;
 
+				//here
+				FAcc_x = ( vectorAccDelta_x / timeDuringAccUpdate ) * 40;
+				FAcc_y = ( vectorAccDelta_y / timeDuringAccUpdate ) * 40;
 
-			//}else if (speedAcc > 200)
-			//{
-			//	isShaking = true;
-			//	d += sqrt( pow( (pAccelerationValue->x - last_x), 2) + pow( (pAccelerationValue->y - last_y) ,2 ) + pow( (pAccelerationValue->z - last_z), 2) );
-
-			//	//update vector Acc Delta
-			//	vectorAccDelta.x = ( pAccelerationValue->x - last_x ) * 9.81f;
-			//	vectorAccDelta.y = ( pAccelerationValue->y - last_y ) * 9.81f;
+				for (int i = 0; i < n; i++)
+				{
+					arrRock[i]->addF_x( FAcc_x );
+					arrRock[i]->addF_y( FAcc_y );
+				}
 			}
 			else
 			{
-				isShaking = false;
-				d -= 5.0f;
-				if (d < 0)
+				vectorAccDelta_x = 0.0;
+				vectorAccDelta_y = 0.0;
+				for (int i = 0; i < n; i++)
 				{
-					d = 0.0f;
+					arrRock[i]->addF_x( 0);
+					arrRock[i]->addF_y( 0 );
 				}
-				vectorAccDelta.x = 0.0;
-				vectorAccDelta.y = 0.0;
 			}
-
 			last_x = pAccelerationValue->x;
 			last_y = pAccelerationValue->y;
 			last_z = pAccelerationValue->z;
@@ -94,53 +97,64 @@ void BackgroundLayer::didAccelerate(CCAcceleration* pAccelerationValue)
 			last_y = pAccelerationValue->y;
 			last_z = pAccelerationValue->z;
 
-			vectorAccDelta = CCPoint(0 , 0);
+			vectorAccDelta_y = vectorAccDelta_x = 0;
+			//vectorAccDelta = CCPoint(0 , 0);
 		}
 		timeDuringAccUpdate = 0;
 	}
-
-	float vx = vectorAccDelta.x * 150;
-	float vy = vectorAccDelta.y * 150;
-	for (int i = 0; i < n; i++)
-	{
-		arrRock[i]->setVx( vx );
-		arrRock[i]->setVy( vy );
-
-		arrRock[i]->setLastVx( vx );
-		arrRock[i]->setLastVy( vy );
-
-		//if (vx > 0)
-		//{
-		//	arrRock[i]->ax = -2;
-		//}else
-		//{
-		//	arrRock[i]->ax = 2;
-		//}
-
-		//if (vy > 0)
-		//{
-		//	arrRock[i]->ay = -2;
-		//}else
-		//{
-		//	arrRock[i]->ay = 2;
-		//}
-	}
+	//pLabel->setString(str);
 }
 
 void BackgroundLayer::update(float delta)
 {
 	timeDuringAccUpdate += delta;
+	
+	sprintf(strRock, "%.2f  ----   %.2f", arrRock[0]->getF_x(), arrRock[0]->getF_y());
+	pLabelRock->setString(strRock);
+
+	float Fx_i;
+	float Fy_i;
 	//xem lai va cham
 	for (int i = 0; i < n - 1; i++)
 	{
+		//GameObj* obji = (GameObj*) arrRock[i];
+		CCRect bound_i = arrRock[i]->getBound();
+		bound_i.origin.x += arrRock[i]->get_ax() * 100 * delta * delta;
+		bound_i.origin.y += arrRock[i]->get_ay() * 100 * delta * delta;
+
 		for (int j = i + 1; j < n; j++)
 		{
-			if ( arrRock[i]->getBound().intersectsRect( arrRock[j]->getBound() ) )
+			CCRect bound_j = arrRock[j]->getBound();
+			bound_j.origin.x += arrRock[j]->get_ax() * 100 * delta * delta;
+			bound_j.origin.y += arrRock[j]->get_ay() * 100 * delta * delta;
+
+			if ( bound_i.intersectsRect( bound_j ) )
 			{
-				arrRock[i]->setVx( -arrRock[i]->getVx() );
-				arrRock[i]->setVy( -arrRock[i]->getVy() );
-				arrRock[j]->setVx( -arrRock[i]->getVx() );
-				arrRock[j]->setVy( -arrRock[i]->getVy() );
+				Fx_i = arrRock[i]->getF_x();
+				Fy_i = arrRock[i]->getF_y();
+
+				if (Fx_i * arrRock[j]->getF_x() > 0)
+				{
+					arrRock[i]->setF_x( ( Fx_i + arrRock[j]->getF_x() ) / 2 );
+					arrRock[j]->setF_x( ( Fx_i + arrRock[j]->getF_x() ) / 2 );
+				} 
+				else
+				{
+					arrRock[i]->setF_x( ( arrRock[j]->getF_x() - Fx_i ) / 2 );
+					arrRock[j]->setF_x( ( Fx_i - arrRock[j]->getF_x() ) / 2 );
+				}
+				
+				if (Fy_i * arrRock[j]->getF_y() > 0)
+				{
+					arrRock[i]->setF_y( ( arrRock[j]->getF_y() + Fy_i ) / 2 );
+					arrRock[j]->setF_y( ( Fy_i + arrRock[j]->getF_y() ) / 2 );
+				} 
+				else
+				{
+					arrRock[i]->setF_y( ( arrRock[j]->getF_y() - Fy_i ) / 2 );
+					arrRock[j]->setF_y( ( Fy_i - arrRock[j]->getF_y() ) / 2 );
+				}
+
 			}
 		}
 	}

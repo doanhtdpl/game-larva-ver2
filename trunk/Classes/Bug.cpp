@@ -47,11 +47,11 @@ string Bug::getId()
 
 void Bug::update(float deltatime)
 {
-	/*if (curpower > 100)
+	if (curpower > 100)
 	{
-		if (curpower > powerup * 2)
+		if (curpower > powerup * 4)
 		{
-			curpower = powerup * 2;
+			curpower = powerup * 4;
 		}
 		float scale = curpower / powerup;
 
@@ -59,9 +59,7 @@ void Bug::update(float deltatime)
 	}else
 	{
 		this->setScale( 0 );
-	}*/
-	this->setScale( 2 );
-
+	}
 }
 
 float Bug::getCurPower()
@@ -81,4 +79,3 @@ Bug::~Bug()
 {
 
 }
-

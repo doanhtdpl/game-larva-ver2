@@ -12,10 +12,8 @@ bool GameObjLayer::init()
 	file->LoadCSV();
 	CCDictionary* mymap = file->getBugDictionary();
 
-//	std::vector<Bug*> arrBug;
 	for (int i = 0; i < mymap->count(); ++i)
 	{
-		//char* id = strdup(to_string( i + 1).c_str());
 		stringstream ss;
 		ss << (i + 1 );
 		string id = ss.str();
