@@ -1,5 +1,5 @@
 obj/local/armeabi/objs/cocos2dx_static/support/base64.o: \
- /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../cocos2dx/support/base64.cpp \
+ /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../cocos2dx/support/base64.cpp \
  /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/stdio.h \
  /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/sys/cdefs.h \
  /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -22,7 +22,7 @@ obj/local/armeabi/objs/cocos2dx_static/support/base64.o: \
  /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/alloca.h \
  /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/strings.h \
  /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/memory.h \
- /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../cocos2dx/support/base64.h
+ /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../cocos2dx/support/base64.h
 
 /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/stdio.h:
 
@@ -68,4 +68,4 @@ obj/local/armeabi/objs/cocos2dx_static/support/base64.o: \
 
 /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/memory.h:
 
-/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../cocos2dx/support/base64.h:
+/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../cocos2dx/support/base64.h:

@@ -2,6 +2,7 @@
 #define __BACKGROUND_LAYER__
 
 #include "cocos2d.h"
+#include <string>
 
 using namespace cocos2d;
 
@@ -28,12 +29,19 @@ private:
 	float last_z;
 	float speedAcc;
 	bool flagAcc;
-	bool isShaking;
-	CCPoint posOldAcc;
-	CCPoint posCurAcc;
-	float d;
-	CCPoint vectorAccDelta;
+	//	bool isShaking;
+
+	//	float d;
+	char str[20];
+	char strRock[20];
+	float vectorAccDelta_x;
+	float vectorAccDelta_y;
 	float timeDuringAccUpdate;
+	CCLabelTTF* pLabel;
+	CCLabelTTF* pLabelRock;
+
+	float FAcc_x;
+	float FAcc_y;
 };
 
 #endif // !__BACKGROUND_LAYER__

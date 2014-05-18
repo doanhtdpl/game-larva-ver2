@@ -1,6 +1,6 @@
 obj/local/armeabi/objs/cocos_extension_static/spine/Json.o: \
- /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/Json.cpp \
- /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/Json.h \
+ /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/Json.cpp \
+ /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/Json.h \
  /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/math.h \
  /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/sys/cdefs.h \
  /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -27,27 +27,27 @@ obj/local/armeabi/objs/cocos_extension_static/spine/Json.o: \
  /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/asm/page.h \
  /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/stdio.h \
  /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/ctype.h \
- /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/extension.h \
+ /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/extension.h \
  /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/stdlib.h \
  /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/string.h \
  /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/malloc.h \
  /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/alloca.h \
  /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/strings.h \
  /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/memory.h \
- /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/Skeleton.h \
- /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/SkeletonData.h \
- /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/BoneData.h \
- /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/SlotData.h \
- /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/Skin.h \
- /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/Attachment.h \
- /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/Animation.h \
- /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/Slot.h \
- /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/Bone.h \
- /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/RegionAttachment.h \
- /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/Atlas.h \
- /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/AttachmentLoader.h
+ /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/Skeleton.h \
+ /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/SkeletonData.h \
+ /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/BoneData.h \
+ /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/SlotData.h \
+ /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/Skin.h \
+ /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/Attachment.h \
+ /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/Animation.h \
+ /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/Slot.h \
+ /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/Bone.h \
+ /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/RegionAttachment.h \
+ /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/Atlas.h \
+ /cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/AttachmentLoader.h
 
-/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/Json.h:
+/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/Json.h:
 
 /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/math.h:
 
@@ -101,7 +101,7 @@ obj/local/armeabi/objs/cocos_extension_static/spine/Json.o: \
 
 /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/ctype.h:
 
-/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/extension.h:
+/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/extension.h:
 
 /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/stdlib.h:
 
@@ -115,26 +115,26 @@ obj/local/armeabi/objs/cocos_extension_static/spine/Json.o: \
 
 /cygdrive/r/Android/SoftWare/android-ndk-r9c/platforms/android-15/arch-arm/usr/include/memory.h:
 
-/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/Skeleton.h:
+/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/Skeleton.h:
 
-/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/SkeletonData.h:
+/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/SkeletonData.h:
 
-/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/BoneData.h:
+/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/BoneData.h:
 
-/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/SlotData.h:
+/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/SlotData.h:
 
-/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/Skin.h:
+/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/Skin.h:
 
-/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/Attachment.h:
+/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/Attachment.h:
 
-/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/Animation.h:
+/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/Animation.h:
 
-/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/Slot.h:
+/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/Slot.h:
 
-/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/Bone.h:
+/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/Bone.h:
 
-/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/RegionAttachment.h:
+/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/RegionAttachment.h:
 
-/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/Atlas.h:
+/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/Atlas.h:
 
-/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarva/proj.android/../../../extensions/spine/AttachmentLoader.h:
+/cygdrive/r/cc/cocos2d-x-2.2.3/cocos2d-x-2.2.3/projects/GameLarvaVer2/proj.android/../../../extensions/spine/AttachmentLoader.h:
