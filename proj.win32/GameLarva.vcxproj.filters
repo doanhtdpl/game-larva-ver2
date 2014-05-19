@@ -97,6 +97,9 @@
     <Filter Include="Classes\GameScene\Layer\ItemLayer">
       <UniqueIdentifier>{2392132c-8769-4130-9679-7ba1b7421e05}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Item\ListViewItem">
+      <UniqueIdentifier>{5fcaabfe-75ab-4620-a8a5-c7b27dc43a49}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -194,6 +197,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\RockFactory.cpp">
       <Filter>Classes\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ListViewItem.cpp">
+      <Filter>Classes\Item\ListViewItem</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -307,6 +313,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\RockFactory.h">
       <Filter>Classes\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ListViewItem.h">
+      <Filter>Classes\Item\ListViewItem</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

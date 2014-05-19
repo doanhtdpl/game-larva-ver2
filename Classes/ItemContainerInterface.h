@@ -22,8 +22,8 @@ public:
 	virtual void setLevelUnlock(int _level) = 0;
 	virtual int  getLevelUnlock() = 0;
 	virtual void setCount(int _count) = 0;
-	virtual int  getCount() = 0;
-	virtual void setDuringTime(float _dt) = 0;
+	virtual int    getCount() = 0;
+	virtual void   setDuringTime(float _dt) = 0;
 	virtual float  getDuringTime() = 0;
 };
 

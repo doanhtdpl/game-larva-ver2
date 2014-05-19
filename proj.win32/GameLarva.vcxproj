@@ -152,6 +152,7 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
     <ClCompile Include="..\Classes\Item.cpp" />
     <ClCompile Include="..\Classes\ItemContainer.cpp" />
     <ClCompile Include="..\Classes\ItemLayer.cpp" />
+    <ClCompile Include="..\Classes\ListViewItem.cpp" />
     <ClCompile Include="..\Classes\LockState.cpp" />
     <ClCompile Include="..\Classes\MineItemContainer.cpp" />
     <ClCompile Include="..\Classes\MovementState.cpp" />
@@ -189,6 +190,7 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
     <ClInclude Include="..\Classes\ItemContainerInterface.h" />
     <ClInclude Include="..\Classes\ItemContainerState.h" />
     <ClInclude Include="..\Classes\ItemLayer.h" />
+    <ClInclude Include="..\Classes\ListViewItem.h" />
     <ClInclude Include="..\Classes\LockState.h" />
     <ClInclude Include="..\Classes\MineItemContainer.h" />
     <ClInclude Include="..\Classes\MovementState.h" />
