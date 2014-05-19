@@ -24,6 +24,7 @@ Bug::Bug(vector<string> arr)
 	this->setScale( 0.0f );
 	curpower = 0;
 	isAlive = true;
+	scale = 2;
 	this->scheduleUpdate();
 }
 
@@ -53,13 +54,13 @@ void Bug::update(float deltatime)
 		{
 			curpower = powerup * 4;
 		}
-		float scale = curpower / powerup;
-
+	   scale = curpower / powerup;
 		this->setScale(scale);
-	}else
+	}
+	else
 	{
 		this->setScale( 0 );
-	}
+	}	
 }
 
 float Bug::getCurPower()
@@ -74,6 +75,15 @@ void Bug::setCurPower(float power)
 void Bug::setLocation(CCPoint point)
 {
 	this->setPosition(point);
+}
+int Bug::processInput(CCPoint point)
+{
+	if(this->getBound(scale).containsPoint( point ))
+	{
+		this->setVisible(false);
+		return 1;
+	}
+	return 0;
 }
 Bug::~Bug()
 {
