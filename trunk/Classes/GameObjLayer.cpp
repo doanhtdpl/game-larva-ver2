@@ -21,6 +21,8 @@ bool GameObjLayer::init()
 		arrBug.push_back(bug);
 	}
 
+	this->scheduleUpdate();
+
 	srand( time(0) );
 	for ( int i = 0 ; i < arrBug.size(); ++i)
 	{
@@ -37,7 +39,6 @@ bool GameObjLayer::init()
 	flagAcc = false;
 	timeDuringAccUpdate = 0;
 	d = 0;
-	this->scheduleUpdate();
 	//this->setTouchEnabled(false);
 	return true;
 }
