@@ -12,6 +12,7 @@ protected:
 public:
 	GameObj();
 	CCRect getBound();
+	CCRect getBound(int);
 	virtual void update(float ) = 0;
 	~GameObj(){};
 	void insert(char*,char*);

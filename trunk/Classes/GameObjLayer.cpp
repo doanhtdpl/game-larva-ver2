@@ -38,6 +38,7 @@ bool GameObjLayer::init()
 	timeDuringAccUpdate = 0;
 	d = 0;
 	this->scheduleUpdate();
+	//this->setTouchEnabled(false);
 	return true;
 }
 
@@ -56,20 +57,19 @@ void GameObjLayer::ccTouchesBegan(CCSet*  pTouches, CCEvent* pEvent)
 	//	}
 	//}
 
-	CCSetIterator iter = pTouches->begin();
-	for ( ; iter != pTouches->end(); iter++ )
+	//CCSetIterator iter = pTouches->begin();
+	//for ( ; iter != pTouches->end(); iter++ )
+	//{
+	//	CCTouch* touch = (CCTouch*)( *iter );
+	//	CCPoint point = touch->getLocation();
+	CCTouch* touch = (cocos2d::CCTouch*)( pTouches->anyObject() );
+	CCPoint point = touch->getLocation();
+	for (int i = 0; i < arrBug.size(); i++)
 	{
-		CCTouch* touch = (CCTouch*)( *iter );
-		CCPoint point = touch->getLocation();
-		for (int i = 0; i < arrBug.size(); i++)
-		{
-			if ( arrBug.at(i)->getBound().containsPoint( point ) )
-			{
-				arrBug.at(i)->setVisible(false);
-				break;
-			}
-		}
+		if (arrBug.at(i)->processInput(point))
+			break;
 	}
+	//}
 }
 
 void GameObjLayer::ccTouchesEnded(CCSet *pTouches, CCEvent *pEvent)

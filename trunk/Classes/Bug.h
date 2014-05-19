@@ -8,6 +8,7 @@ class Bug : public GameObj
 {
 private:
 	int id;
+	int scale;
 	float powerup;
 	float timedisappear;
 	int limitcatch;
@@ -19,6 +20,7 @@ private:
 public:
 	Bug();
 	Bug( vector<string> );
+	int processInput(CCPoint);
 	string getId();
 	float getTDcurrent();
 	void setTDcurrent(float );

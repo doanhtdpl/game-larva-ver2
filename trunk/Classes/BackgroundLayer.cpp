@@ -45,6 +45,7 @@ bool BackgroundLayer::init()
 	flagAcc = false;
 	timeDuringAccUpdate = 0;
 //	d = 0;
+	//this->setTouchEnabled(false);
 	this->scheduleUpdate();
 	return true;
 }

@@ -9,8 +9,8 @@
 #define __GAME_SCENE_H_
 
 #include "cocos2d.h"
-
-
+#include "Bug.h"
+#include "FileUtil.h"
 using namespace cocos2d;
 class BackgroundLayer;
 class GameObjLayer;
@@ -32,22 +32,15 @@ public:
 	CREATE_FUNC(GameScene);
 
 	void ccTouchesBegan(CCSet* , CCEvent*);
-	void ccTouchesEnded(CCSet *pTouches, CCEvent *pEvent);
-
-	virtual void onEnter();
-	virtual void didAccelerate(CCAcceleration* pAccelerationValue);
-
-	void update( float deltaTime );
+	/*void onEnter();
+	void didAccelerate(CCAcceleration* pAccelerationValue);*/
+	
 protected:
 private:
-
 	/*static InputLayer* inputLayer;
-	static GameObjLayer* gameObjLayer;
-	static BackgroundLayer* backgroundLayer;*/
-	//FileUtil* file;
-	//vector<Bug*> arrBug;
-
-	//CCSprite* backGround;
+	static GameObjLayer* gameObjLayer;*/
+	CCMenuItemImage *pCloseItem;
+	////CCSprite* backGround;
 	//Rock** arrRock;
 	//int n;
 	//cocos2d::CCArray	*objs;

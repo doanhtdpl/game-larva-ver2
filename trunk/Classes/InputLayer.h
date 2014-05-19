@@ -20,9 +20,11 @@ public:
 
 	bool init();
 	virtual void ccTouchesBegan(CCSet* , CCEvent*);
-	virtual void ccTouchesEnded(CCSet *pTouches, CCEvent *pEvent);
+	virtual void ccTouchesEnded(CCSet* , CCEvent*);
+	void getLayer(BackgroundLayer*,GameObjLayer*);
 	void registerWithTouchDispatcher();
 	virtual void onEnter();
+	virtual void onExit();
 	virtual void didAccelerate(CCAcceleration* pAccelerationValue);
 protected:
 private:

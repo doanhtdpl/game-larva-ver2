@@ -15,8 +15,8 @@ public:
 	// implement the "static node()" method manually
 	CREATE_FUNC(GameObjLayer);
 	bool init();
-	void ccTouchesBegan(CCSet* , CCEvent*);
-	void ccTouchesEnded(CCSet *pTouches, CCEvent *pEvent);
+	virtual void ccTouchesBegan(CCSet* , CCEvent*);
+	virtual void ccTouchesEnded(CCSet* , CCEvent*);
 	virtual void didAccelerate(CCAcceleration* pAccelerationValue);
 	void getBugs(std::vector<Bug*> arr);
 	void update(float delta);
