@@ -102,9 +102,6 @@
     <ClCompile Include="main.cpp">
       <Filter>win32</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
-      <Filter>Classes</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\GameScene.cpp">
       <Filter>Classes\GameScene</Filter>
     </ClCompile>
@@ -202,9 +199,6 @@
   <ItemGroup>
     <ClInclude Include="main.h">
       <Filter>win32</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\HelloWorldScene.h">
-      <Filter>Classes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\GameScene.h">
       <Filter>Classes\GameScene</Filter>

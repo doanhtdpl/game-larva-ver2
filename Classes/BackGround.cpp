@@ -22,7 +22,7 @@ BackGround::BackGround()
 		this->addChild( arrRock[i] );
 	}
 
-	this->setTouchEnabled( true );
+	//this->setTouchEnabled( false );
 	this->scheduleUpdate();
 }
 
@@ -51,7 +51,7 @@ bool BackGround::init()
 		this->addChild( arrRock[i] );
 	}
 
-	this->setTouchEnabled( true );
+	//this->setTouchEnabled( false );
 	this->scheduleUpdate();
 
 	return true;
